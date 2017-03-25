@@ -3,8 +3,8 @@
   <!-- Apply any bg-* class to to the icon to color it -->
   <span class="info-box-icon [color]"><i class="ion [icon]"></i></span>
   <div class="info-box-content">
-    <span class="info-box-text">[sql]</span>
-    <span class="info-box-number">[name]</span>
+    <span class="info-box-text">[name]</span>
+    <span class="info-box-number">[sql]</span>
   </div><!-- /.info-box-content -->
 	<div class='action pull-right'>
 	<a href='javascript:void(0)' data-componentid='{{$componentID}}' data-name='Small Box' class='btn-edit-component'><i class='fa fa-pencil'></i></a> &nbsp;
