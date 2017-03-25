@@ -1,20 +1,21 @@
 @if($command=='layout')
-<div id='{{$componentID}}' class='border-box'>
-	                	                		           
-	<div class="panel panel-default">
-      <div class="panel-heading">
-        [name]
-      </div>
-      <div class="panel-body">
-        [sql]
-      </div>
-    </div>
-
+<div id='{{$componentID}}' class="box box-default">
+  <div class="box-header with-border">
+    <h3 class="box-title">[name]</h3>
+    <div class="box-tools pull-right">
+      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+      <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+    </div><!-- /.box-tools -->
+  </div><!-- /.box-header -->
+  <div class="box-body">
+    <p>[sql]</p>
+  </div><!-- /.box-body -->
 	<div class='action pull-right'>
     	<a href='javascript:void(0)' data-componentid='{{$componentID}}' data-name='Panel Area' class='btn-edit-component'><i class='fa fa-pencil'></i></a> &nbsp;
     	<a href='javascript:void(0)' data-componentid='{{$componentID}}' class='btn-delete-component'><i class='fa fa-trash'></i></a>
     </div>
-</div>
+</div><!-- /.box -->
+
 @elseif($command=='configuration')
 	<form method='post'>
 		<input type='hidden' name='_token' value='{{csrf_token()}}'/>

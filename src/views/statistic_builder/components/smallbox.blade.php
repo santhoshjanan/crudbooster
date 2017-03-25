@@ -1,22 +1,16 @@
 @if($command=='layout')
-<div id='{{$componentID}}' class='border-box'>
-	                	                		           
-	<div class="small-box [color]">
-	    <div class='inner inner-box'>
-	      <h3>[sql]</h3>
-	      <p>[name]</p>
-	    </div>
-	    <div class="icon">
-	      <i class="ion [icon]"></i>
-	    </div>
-	    <a href="[link]" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-	</div>
-
+<div id='{{$componentID}}' class="info-box">
+  <!-- Apply any bg-* class to to the icon to color it -->
+  <span class="info-box-icon [color]"><i class="ion [icon]"></i></span>
+  <div class="info-box-content">
+    <span class="info-box-text">[sql]</span>
+    <span class="info-box-number">[name]</span>
+  </div><!-- /.info-box-content -->
 	<div class='action pull-right'>
-    	<a href='javascript:void(0)' data-componentid='{{$componentID}}' data-name='Small Box' class='btn-edit-component'><i class='fa fa-pencil'></i></a> &nbsp;
-    	<a href='javascript:void(0)' data-componentid='{{$componentID}}' class='btn-delete-component'><i class='fa fa-trash'></i></a>
-    </div>
-</div>
+	<a href='javascript:void(0)' data-componentid='{{$componentID}}' data-name='Small Box' class='btn-edit-component'><i class='fa fa-pencil'></i></a> &nbsp;
+	<a href='javascript:void(0)' data-componentid='{{$componentID}}' class='btn-delete-component'><i class='fa fa-trash'></i></a>
+	</div>
+</div><!-- /.info-box -->
 @elseif($command=='configuration')
 	<form method='post'>
 		<input type='hidden' name='_token' value='{{csrf_token()}}'/>

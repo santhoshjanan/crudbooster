@@ -332,24 +332,25 @@
 
 
         <div class="statistic-row row">
-            <div id='area1' class="col-sm-3 connectedSortable">            	
+            <div id='area1' class="col-sm-4 connectedSortable">             
 
             </div>
-            <div id='area2' class="col-sm-3 connectedSortable">
+            <div id='area2' class="col-sm-4 connectedSortable">
                
             </div>
-            <div id='area3' class="col-sm-3 connectedSortable">
+            <div id='area3' class="col-sm-4 connectedSortable">
 
             </div>
-            <div id='area4' class="col-sm-3 connectedSortable">
-            	
-            </div>            
+
         </div>
 
         <div class='statistic-row row'>
-                <div id='area5' class="col-sm-12 connectedSortable">
+            <div id='area4' class="col-sm-6 connectedSortable">
+                
+            </div>            
+            <div id='area5' class="col-sm-6 connectedSortable">
  
-                </div>
+            </div>
         </div>
     
     </div><!--END STATISTIC AREA-->
